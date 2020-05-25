@@ -38,7 +38,6 @@ function padLeadingZeroes(val, digits) {
  * @returns {string}
  */
 export function dateToString(date) {
-  console.log(date)
   if (
     !(
       typeof date === 'string' ||
@@ -48,7 +47,6 @@ export function dateToString(date) {
   )
     return null;
   const d = new Date(date);
-  console.log(d)
   const ampm = d.getHours() > 12 ? 'PM' : 'AM';
   return `${
     MONTH_NAMES[d.getMonth()]
