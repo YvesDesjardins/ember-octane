@@ -1,7 +1,7 @@
 <!-- Channel -->
 <main class="flex-1 flex flex-col bg-white overflow-hidden channel">
 
-  <ChannelHeader @title="Coding is fun" @description="101 ways to kill time" />
+  <ChannelHeader @title={{this.model.name}} @description={{this.model.description}} />
 
   {{ format-timestamp "04/05/1983"}}
 
