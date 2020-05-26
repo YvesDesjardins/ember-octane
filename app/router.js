@@ -6,8 +6,23 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL,
 });
 
-Router.map(function() {
-  this.route('teams');
+Router.map(function () {
+  // teams
+  this.route('teams', function () {
+    // teams/linkedin
+    this.route(
+      'team',
+      {
+        path: ':teamId',
+      },
+      function () {
+        // teams/linkedin/(channel)
+        this.route('channel', {
+          path: ':channelId',
+        });
+      }
+    );
+  });
   this.route('login');
 });
 
