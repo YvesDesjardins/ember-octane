@@ -54,4 +54,18 @@ export default class ChatContainerComponent extends Component {
 
     this.messages = [...this.messages, {...messageData, user}];
   }
+
+  @action
+  async deleteMessage(messageId) {
+    const response = await fetch(`/api/messages/${messageId}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/JSON',
+      },
+    });
+    const messageIds = this.messages.map(m => m.id);
+    const idxToDelete = messageIds.indexOf(messageId);
+    this.messages.splice(idxToDelete, 1);
+    this.messages = this.messages; // necessary for @tracked
+  }
 }
