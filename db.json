@@ -222,7 +222,9 @@
       "channelId": "general",
       "userId": 1,
       "body": "awqwdqwqwdq",
-      "enrichedBody": ["awqwdqwqwdq"],
+      "enrichedBody": [
+        "awqwdqwqwdq"
+      ],
       "createdAt": 1555872270175,
       "id": 14
     },
@@ -569,6 +571,30 @@
       "userId": "1",
       "createdAt": 1556683077121,
       "id": 57
+    },
+    {
+      "teamId": "linkedin",
+      "channelId": "recruiting",
+      "userId": "2",
+      "body": "test",
+      "createdAt": 1590536310270,
+      "id": 58
+    },
+    {
+      "teamId": "linkedin",
+      "channelId": "recruiting",
+      "userId": "2",
+      "body": "test",
+      "createdAt": 1590536311548,
+      "id": 59
+    },
+    {
+      "teamId": "linkedin",
+      "channelId": "recruiting",
+      "userId": "2",
+      "body": "test this!",
+      "createdAt": 1590536327011,
+      "id": 60
     }
   ]
 }
