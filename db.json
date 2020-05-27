@@ -595,6 +595,22 @@
       "body": "test this!",
       "createdAt": 1590536327011,
       "id": 60
+    },
+    {
+      "teamId": "linkedin",
+      "channelId": "recruiting",
+      "userId": "2",
+      "body": "work?",
+      "createdAt": 1590538201147,
+      "id": 61
+    },
+    {
+      "teamId": "linkedin",
+      "channelId": "recruiting",
+      "userId": "2",
+      "body": "yes",
+      "createdAt": 1590538204544,
+      "id": 62
     }
   ]
 }

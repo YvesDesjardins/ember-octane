@@ -47,5 +47,11 @@ export default class ChatContainerComponent extends Component {
         body,
       }),
     });
+
+    if (!response.ok) throw Error('Could not save chat message');
+    const messageData = await response.json();
+    const user = await (await fetch(`/api/users/${userId}`)).json();
+
+    this.messages = [...this.messages, {...messageData, user}];
   }
 }
